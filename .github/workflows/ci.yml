@@ -40,7 +40,7 @@ jobs:
         pytest tests/
     - name: Cat test logs
       run: |
-        cat pytest.log
+        cat *.log
     - name: Test Report
       uses: mikepenz/action-junit-report@v4
       if: success() || failure()    # run this step even if previous step failed
