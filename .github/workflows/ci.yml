@@ -1,4 +1,4 @@
-name: Pylint
+name: CI
 
 on: [push]
 
@@ -33,4 +33,3 @@ jobs:
       run: |
         source .venv/bin/activate
         pytest tests/
-        coverage report
