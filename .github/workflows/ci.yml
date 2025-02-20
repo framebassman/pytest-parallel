@@ -38,3 +38,4 @@ jobs:
       if: success() || failure()    # run this step even if previous step failed
       with:
         report_paths: junit/test-results.xml    # Path to test results
+        token: ${{ secrets.GITHUB_TOKEN }}
